@@ -4,7 +4,7 @@ import check50.c
 @check50.check()
 def existe():
     """credito.c existe"""
-    check50.existe("credito.c")
+    check50.exists("credito.c")
 
 @check50.check(existe)
 def compila():
