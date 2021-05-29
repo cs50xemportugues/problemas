@@ -4,7 +4,7 @@ import check50.c
 @check50.check()
 def existe():
     """mario.c existe"""
-    check50.existe("mario.c")
+    check50.exists("mario.c")
     check50.include("1.txt", "2.txt", "8.txt")
 
 @check50.check(existe)
@@ -13,7 +13,7 @@ def compila():
     check50.c.compile("mario.c", lcs50=True)
 
 @check50.check(compila)
-def teste_reject_negative():
+def teste_rejeita_negativo():
     """rejeita uma altura igual a -1"""
     check50.run("./mario").stdin("-1").reject()
 
