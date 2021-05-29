@@ -5,7 +5,7 @@ import check50.c
 @check50.check()
 def existe():
     """dinheiro.c existe"""
-    check50.existe("dinheiro.c")
+    check50.exists("dinheiro.c")
 
 
 @check50.check(existe)
